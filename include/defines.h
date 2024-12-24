@@ -5,3 +5,9 @@
 #else
 #define CRASHREPORTER_EXPORT __declspec(dllimport)
 #endif
+
+#define CHECK_IF(cond, sts) \
+    {                       \
+        if (cond)           \
+            return (sts);   \
+    }
